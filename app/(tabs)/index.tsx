@@ -1,11 +1,16 @@
 import { StyleSheet, Text, View } from "react-native";
-
+import Routes from "../../routes"
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>This text is black !</Text>
+    <View>
+      <Routes/>
     </View>
+    
+    // <View style={styles.container}>
+    //   <Text style={styles.text}>This text is black !</Text>
+    //   <Routes />
+    // </View>
   );
 }
 
