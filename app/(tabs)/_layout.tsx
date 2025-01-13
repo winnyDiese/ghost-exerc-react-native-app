@@ -7,13 +7,13 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { NavigationContainer } from '@react-navigation/native';
+// import { NavigationContainer } from '@react-navigation/native';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
 
       <Tabs
         screenOptions={{
@@ -45,7 +45,7 @@ export default function TabLayout() {
         />
       </Tabs>
 
-    </NavigationContainer>
+    // </NavigationContainer>
 
   );
 }
