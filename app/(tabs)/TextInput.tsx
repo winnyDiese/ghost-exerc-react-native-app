@@ -21,6 +21,14 @@ const Textinput = () => {
         onChangeText={newText => setText(newText)}
         defaultValue={text}
       />
+
+      <Text style={{padding: 10, fontSize: 42}}>
+        {text
+          .split(' ')
+          .map(word => word && '🍕')
+          .join(' ')
+        }
+      </Text>
     </View>
   )
 }
@@ -35,6 +43,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'yellow',
         padding:20,
+        marginBottom:30,
+        fontWeight: 'bold'
     },
     text:{
         color: 'black',
