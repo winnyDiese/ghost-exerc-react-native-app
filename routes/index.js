@@ -9,11 +9,11 @@ const Stack = createNativeStackNavigator()
 
 const Routes = () => {
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name='Home' component={Home}/>
         </Stack.Navigator>
-    </NavigationContainer>
+    // </NavigationContainer>
   )
 }
 
