@@ -7,17 +7,19 @@ const Textinput = () => {
 
   return (
     <View style={styles.container}>
-      <Text>TextInput</Text>
+      <Text style={styles.text}>TextInput</Text>
+      {/* <Text>{text}</Text> */}
       <TextInput
         style={{
           height: 40,
           borderWidth: 1, // Ajoute une bordure de 1 unité
           borderColor: 'gray', // Définit la couleur de la bordure
           borderRadius: 5, // (Optionnel) Arrondit les coins de la bordure
-          padding: 3  
+          padding: 3
         }}
         placeholder="Type here to translate!"
-        
+        onChangeText={newText => setText(newText)}
+        defaultValue={text}
       />
     </View>
   )
