@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from "react-native";
 import Routes from "../../routes"
-import {NavigationContainer} from "@react-navigation/native"
+// import {NavigationContainer} from "@react-navigation/native"
 
 
 export default function HomeScreen() {
   return (
     <View>
-      <NavigationContainer>
+      {/* <NavigationContainer> */}
         <Routes/>
-      </NavigationContainer>
+      {/* </NavigationContainer> */}
     </View>
 
     // <View style={styles.container}>
