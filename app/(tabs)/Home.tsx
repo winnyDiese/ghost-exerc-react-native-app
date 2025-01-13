@@ -1,11 +1,19 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home to tabs</Text>
-    </View>
+    <ScrollView contentContainerStyle={styles.container}>
+        <View>
+            <Text style={styles.text}>
+                Home to tabs
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Molestiae ullam similique quia fuga tempore, officiis 
+                veritatis porro dicta ea aperiam sit dolor quam tenetur, 
+                harum suscipit dolores deleniti eveniet animi.
+            </Text>
+        </View>
+    </ScrollView>
   )
 }
 
