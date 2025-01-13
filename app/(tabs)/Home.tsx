@@ -77,7 +77,7 @@ export default Home
 const styles = StyleSheet.create({
   container: {
     // flex: 1,
-    
+    padding: 8,
     backgroundColor: 'yellow'
   },
   text:{
@@ -90,5 +90,6 @@ const styles = StyleSheet.create({
     fontSize: 40, // Taille raisonnable pour des écrans de tailles variées
     fontWeight: 'bold',
     textAlign: 'center',
+    marginBottom:40
   },
 })
