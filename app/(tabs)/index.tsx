@@ -9,6 +9,7 @@ export default function HomeScreen() {
       {/* <NavigationContainer> */}
         <Routes/>
       {/* </NavigationContainer> */}
+      <Text>Hello, how are you ? </Text>
     </View>
 
     // <View style={styles.container}>
