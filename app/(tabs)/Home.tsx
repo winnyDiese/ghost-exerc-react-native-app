@@ -90,6 +90,6 @@ const styles = StyleSheet.create({
     fontSize: 40, // Taille raisonnable pour des écrans de tailles variées
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom:40
+    marginBottom: 40
   },
 })
