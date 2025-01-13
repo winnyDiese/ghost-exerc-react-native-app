@@ -1,12 +1,41 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet, TextInput } from 'react-native'
+import React, { useState } from 'react'
 
-const TextInput = () => {
+const Textinput = () => {
+
+    const [text, setText] = useState('')
+
   return (
-    <View>
+    <View style={styles.container}>
       <Text>TextInput</Text>
+      <TextInput
+        style={{
+          height: 40,
+          borderWidth: 1, // Ajoute une bordure de 1 unité
+          borderColor: 'gray', // Définit la couleur de la bordure
+          borderRadius: 5, // (Optionnel) Arrondit les coins de la bordure
+          padding: 3  
+        }}
+        placeholder="Type here to translate!"
+        
+      />
     </View>
   )
 }
 
-export default TextInput
+export default Textinput
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'yellow',
+        padding:20,
+    },
+    text:{
+        color: 'black',
+        fontSize: 22
+    }
+})
