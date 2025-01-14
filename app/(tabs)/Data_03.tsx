@@ -42,7 +42,11 @@ const Data = () => {
 
             <Text style={{padding: 20, backgroundColor:'white', marginBottom: 30}}>Second Text</Text>
             <FlatList
-
+                data={data}
+                keyExtractor={(item, index) => index.toString()}
+                renderItem={({item}) => (
+                    <Text style={styles.item}>{item}</Text>
+                )}
             >
 
             </FlatList>
