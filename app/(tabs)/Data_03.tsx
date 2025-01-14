@@ -1,11 +1,27 @@
+import { useState } from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
 import renderer from 'react-test-renderer';
 
 const Data = () => {
 
+    const [data, setData] = useState([
+        'Devin',
+        'Dan',
+        'Dominic',
+        'Jackson',
+        'James',
+        'Joel',
+        'John',
+        'Jillian',
+        'Jimmy',
+        'Julie',
+    ])
+
     return (
-        <View >
+        <View style={{padding: 20, backgroundColor:'white'}}>
+            <Text style={{fontSize: 30, fontWeight: 'bold'}}>First list</Text>
             <FlatList
+                style={{marginBottom:20}}
                 data={[
                     {key: 'Devin'},
                     {key: 'Dan'},
@@ -23,6 +39,13 @@ const Data = () => {
             >
 
             </FlatList>
+
+            <Text style={{padding: 20, backgroundColor:'white', marginBottom: 30}}>Second Text</Text>
+            <FlatList
+
+            >
+
+            </FlatList>
         </View>
     )
 }
@@ -32,12 +55,11 @@ export default Data
 
 const styles = StyleSheet.create({
     container:{
-        flex: 1,
         paddingTop: 22
     },
     item: {
         padding: 10,
-        fontSize: 18,
-        height: 44
+        fontSize: 12,
+        height: 30
     }
 })
