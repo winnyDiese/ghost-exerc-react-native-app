@@ -40,7 +40,7 @@ const Data = () => {
 
             </FlatList>
 
-            <Text style={{fontSize: 30, fontWeight: 'bold', marginBottom: 30}}>Second Text</Text>
+            <Text style={{fontSize: 30, fontWeight: 'bold', marginBottom: 30}}>Custom first List</Text>
             <FlatList
                 data={data}
                 keyExtractor={(item, index) => index.toString()}
@@ -48,8 +48,9 @@ const Data = () => {
                     <Text style={styles.item}>{item}</Text>
                 )}
             >
-
             </FlatList>
+
+            
         </View>
     )
 }
