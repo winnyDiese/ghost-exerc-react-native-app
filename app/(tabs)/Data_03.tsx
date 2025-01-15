@@ -19,67 +19,69 @@ const Data = () => {
     ])
 
     return (
-        // <ScrollView
-        <View style={{padding: 20, backgroundColor:'white'}}>
+        <ScrollView>
+            <View style={{padding: 20, backgroundColor:'white'}}>
 
-            <Text style={{fontSize: 30, fontWeight: 'bold'}}>First list</Text>
-            <FlatList
-                style={{marginBottom:20}}
-                data={[
-                    {key: 'Devin'},
-                    {key: 'Dan'},
-                    {key: 'Dominic'},
-                    {key: 'Jackson'},
-                    {key: 'James'},
-                    {key: 'Joel'},
-                    {key: 'John'},
-                    {key: 'Jillian'},
-                    {key: 'Jimmy'},
-                    {key: 'Julie'},
-                ]}
+                <Text style={{fontSize: 30, fontWeight: 'bold'}}>First list</Text>
+                <FlatList
+                    style={{marginBottom:20}}
+                    data={[
+                        {key: 'Devin'},
+                        {key: 'Dan'},
+                        {key: 'Dominic'},
+                        {key: 'Jackson'},
+                        {key: 'James'},
+                        {key: 'Joel'},
+                        {key: 'John'},
+                        {key: 'Jillian'},
+                        {key: 'Jimmy'},
+                        {key: 'Julie'},
+                    ]}
 
-                renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
-            >
+                    renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+                >
 
-            </FlatList>
+                </FlatList>
 
-            <Text style={{fontSize: 30, fontWeight: 'bold', marginBottom: 20}}>Custom first List</Text>
-            <FlatList
-                data={data}
-                keyExtractor={(item, index) => index.toString()}
-                renderItem={({item}) => (
-                    <Text style={styles.item}>{item}</Text>
-                )}
-            >
-            </FlatList>
+                <Text style={{fontSize: 30, fontWeight: 'bold', marginBottom: 20}}>Custom first List</Text>
+                <FlatList
+                    data={data}
+                    keyExtractor={(item, index) => index.toString()}
+                    renderItem={({item}) => (
+                        <Text style={styles.item}>{item}</Text>
+                    )}
+                >
+                </FlatList>
 
-            <Text style={{fontSize: 30, fontWeight: 'bold', marginBottom: 20}}>Second List</Text>
-            <SectionList
-                sections={[
-                    {title: 'D', data: ['Devin', 'Dan', 'Dominic']},
-                    {
-                        title: 'J',
-                        data: [
-                          'Jackson',
-                          'James',
-                          'Jillian',
-                          'Jimmy',
-                          'Joel',
-                          'John',
-                          'Julie',
-                        ],
-                    },
-                ]}
+                <Text style={{fontSize: 30, fontWeight: 'bold', marginBottom: 20}}>Second List</Text>
+                <SectionList
+                    sections={[
+                        {title: 'D', data: ['Devin', 'Dan', 'Dominic']},
+                        {
+                            title: 'J',
+                            data: [
+                            'Jackson',
+                            'James',
+                            'Jillian',
+                            'Jimmy',
+                            'Joel',
+                            'John',
+                            'Julie',
+                            ],
+                        },
+                    ]}
 
-                renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
-                renderSectionHeader={({section}) => (
-                    <Text style={styles.sectionHeader2}>{section.title}</Text>
-                )}
-            >
+                    renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
+                    renderSectionHeader={({section}) => (
+                        <Text style={styles.sectionHeader2}>{section.title}</Text>
+                    )}
+                    keyExtractor={item => `basicListEntry-${item}`}
+                >
 
-            </SectionList>
+                </SectionList>
 
-        </View>
+            </View>
+        </ScrollView>
     )
 }
 
