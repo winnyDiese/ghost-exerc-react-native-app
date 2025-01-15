@@ -13,13 +13,13 @@ export default Home
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // flex: 1,
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: 'yellow'
   },
   text:{
     color: 'black',
-    fontSize: 50
+    fontSize: 30
   }
 })
