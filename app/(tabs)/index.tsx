@@ -5,11 +5,11 @@ import Routes from "../../routes"
 
 export default function HomeScreen() {
   return (
-    <View>
+    <View style={{flex:1}}>
       {/* <NavigationContainer> */}
         <Routes/>
       {/* </NavigationContainer> */}
-      <Text>Hello, how are you ? </Text>
+      <Text style={{color:'red'}}>Hello, how are you ? </Text>
     </View>
 
     // <View style={styles.container}>

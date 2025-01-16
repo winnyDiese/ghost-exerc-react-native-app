@@ -12,6 +12,7 @@ const Routes = () => {
     // <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name='Home' component={Home}/>
+            {/* <Stack.Screen name='Ngulu' component={Home}/> */}
         </Stack.Navigator>
     // </NavigationContainer>
   )
