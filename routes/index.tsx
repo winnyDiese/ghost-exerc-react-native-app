@@ -12,6 +12,7 @@ const Routes = () => {
     // <NavigationContainer>
         <Stack.Navigator
           initialRouteName='home'
+          screenOptions={{headerShown: false}}
         >
             <Stack.Screen name='home' component={Home}/>
             {/* <Stack.Screen name='Ngulu' component={Home}/> */}
