@@ -4,7 +4,7 @@ import React from 'react'
 const BootomTabs = () => {
   return (
     <View>
-      <Text>BootomTabs</Text>
+      <Text>BootomTabs page</Text>
     </View>
   )
 }
