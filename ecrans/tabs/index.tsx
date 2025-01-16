@@ -17,7 +17,10 @@ const BootomTabs = () => {
         name='Feed'
         component={feed}
         options={{
-          tabBarLabel: 'Home'
+          tabBarLabel: 'Home',
+          tabBarIcon: ({color, size}) => {
+            <MaterialCommunityIcons name='home' color={color} size={size}
+          }
         }}
       >
 
