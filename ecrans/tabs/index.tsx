@@ -1,5 +1,6 @@
 import { View, Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import React from 'react'
 
 const Tab = createBottomTabNavigator()
@@ -14,6 +15,10 @@ const BootomTabs = () => {
     >
       <Tab.Screen
         name='Feed'
+        component={feed}
+        options={{
+          tabBarLabel: 'Home'
+        }}
       >
 
       </Tab.Screen>
