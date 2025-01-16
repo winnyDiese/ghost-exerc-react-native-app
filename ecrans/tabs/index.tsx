@@ -23,9 +23,19 @@ const BootomTabs = () => {
             <MaterialCommunityIcons name='home' color={color} size={size} />
           }
         }}
-      >
+      />
 
-      </Tab.Screen>
+      <Tab.Screen
+        name='Profile'
+        component={Home}
+        options={{
+          tabBarLabel: 'Profil',
+          tabBarIcon: ({color, size}) => {
+            <MaterialCommunityIcons name='account' color={color} size={size} />
+          }
+        }}
+      />
+
     </Tab.Navigator>
   )
 }
