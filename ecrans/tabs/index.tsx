@@ -35,6 +35,17 @@ const BootomTabs = () => {
           }
         }}
       />
+      
+      <Tab.Screen
+        name='NOtification'
+        component={Home}
+        options={{
+          tabBarLabel: 'Update',
+          tabBarIcon: ({color, size}) => {
+            <MaterialCommunityIcons name='bell' color={color} size={size} />
+          }
+        }}
+      />
 
     </Tab.Navigator>
   )
