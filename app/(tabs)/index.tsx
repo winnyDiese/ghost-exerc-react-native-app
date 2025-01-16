@@ -9,7 +9,6 @@ export default function HomeScreen() {
       {/* <NavigationContainer> */}
         <Routes/>
       {/* </NavigationContainer> */}
-      <Text style={{color:'red'}}>Hello, how are you ? </Text>
     </View>
 
     // <View style={styles.container}>
