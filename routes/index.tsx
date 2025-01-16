@@ -14,7 +14,7 @@ const Routes = () => {
           initialRouteName='home'
           screenOptions={{headerShown: false}}
         >
-            <Stack.Screen name='home' component={BootomTabs}/>
+          <Stack.Screen name='home' component={BootomTabs}/>
         </Stack.Navigator>
     // </NavigationContainer>
   )
