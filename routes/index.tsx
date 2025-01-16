@@ -10,8 +10,10 @@ const Stack = createNativeStackNavigator()
 const Routes = () => {
   return (
     // <NavigationContainer>
-        <Stack.Navigator>
-            <Stack.Screen name='Home' component={Home}/>
+        <Stack.Navigator
+          initialRouteName='home'
+        >
+            <Stack.Screen name='home' component={Home}/>
             {/* <Stack.Screen name='Ngulu' component={Home}/> */}
         </Stack.Navigator>
     // </NavigationContainer>
