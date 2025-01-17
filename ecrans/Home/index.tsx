@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>This is my home page...</Text>
+      <Text style={styles.text}>This is the dashboard...</Text>
     </View>
   )
 }

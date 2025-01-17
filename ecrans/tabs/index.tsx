@@ -1,13 +1,13 @@
 import { View, Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { createMaterialTabNavigator } from "@react-navigation/material-bottom-tabs"
+// import { createMaterialTabNavigator } from "@react-navigation/material-bottom-tabs"
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import React from 'react'
 import Home from '../Home'
 import Messages from '../Message'
 
-// const Tab = createBottomTabNavigator()
-const Tab = createMaterialTabNavigator()
+const Tab = createBottomTabNavigator()
+// const Tab = createMaterialTabNavigator()
 
 const BootomTabs = () => {
   return (
@@ -29,12 +29,12 @@ const BootomTabs = () => {
       />
 
       <Tab.Screen
-        name='NOtification'
+        name='Notification'
         component={Messages}
         options={{
           tabBarLabel: 'Message',
           tabBarIcon: ({color, size}) => {
-            <MaterialCommunityIcons name='caht' color={color} size={size} />
+            <MaterialCommunityIcons name='chat' color={color} size={size} />
           },
           tabBarBadge: 1
         }}

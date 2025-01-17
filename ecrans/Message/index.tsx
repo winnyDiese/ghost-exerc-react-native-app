@@ -4,7 +4,7 @@ const Messages = () => {
 
     return (
         <View>
-            <Text>Message page</Text>
+            <Text style={{color: 'white', fontSize: 22}}>Message page</Text>
         </View>
     )
 }
