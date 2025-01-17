@@ -1,10 +1,12 @@
 import { View, Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { createMaterialTabNavigator } from ""
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import React from 'react'
 import Home from '../Home'
 
-const Tab = createBottomTabNavigator()
+// const Tab = createBottomTabNavigator()
+const Tab = createMaterialTabNavigator
 
 const BootomTabs = () => {
   return (
