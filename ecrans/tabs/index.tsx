@@ -5,6 +5,7 @@ import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import React from 'react'
 import Home from '../Home'
 import Messages from '../Message'
+import Settings from '../Setting'
 
 const Tab = createBottomTabNavigator()
 // const Tab = createMaterialTabNavigator()
@@ -41,8 +42,8 @@ const BootomTabs = () => {
       />
 
       <Tab.Screen
-        name='Profile'
-        component={Home}
+        name='Paramettre'
+        component={Settings}
         options={{
           tabBarLabel: 'Paramettre',
           tabBarIcon: ({color, size}) => {
