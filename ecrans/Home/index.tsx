@@ -1,11 +1,12 @@
-import { View, Text, StyleSheet, ScrollView } from 'react-native'
+import { View, Text, StyleSheet, ScrollView, Image} from 'react-native'
 import React from 'react'
 
 const Home = () => {
   return (
     <ScrollView>
-      <View style={}>
+      <View >
         <Text style={{color: 'white'}}>John Doe</Text>
+        <Image source={require('../../assets/images/djadja.PNG')} />
       </View>
     </ScrollView>
   )
@@ -14,5 +15,5 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
-  
+
 })
