@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { createMaterialTabNavigator } from ""
+import { createMaterialTabNavigator } from "@react-navigation/material-bottom-tabs"
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import React from 'react'
 import Home from '../Home'
 
 // const Tab = createBottomTabNavigator()
-const Tab = createMaterialTabNavigator
+const Tab = createMaterialTabNavigator()
 
 const BootomTabs = () => {
   return (
@@ -20,7 +20,7 @@ const BootomTabs = () => {
         name='home'
         component={Home}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Dashboard',
           tabBarIcon: ({color, size}) => {
             <MaterialCommunityIcons name='home' color={color} size={size} />
           }
@@ -31,9 +31,9 @@ const BootomTabs = () => {
         name='Profile'
         component={Home}
         options={{
-          tabBarLabel: 'Profil',
+          tabBarLabel: 'Paramettre',
           tabBarIcon: ({color, size}) => {
-            <MaterialCommunityIcons name='account' color={color} size={size} />
+            <MaterialCommunityIcons name='setting' color={color} size={size} />
           }
         }}
       />
@@ -42,10 +42,11 @@ const BootomTabs = () => {
         name='NOtification'
         component={Home}
         options={{
-          tabBarLabel: 'Update',
+          tabBarLabel: 'Message',
           tabBarIcon: ({color, size}) => {
-            <MaterialCommunityIcons name='bell' color={color} size={size} />
-          }
+            <MaterialCommunityIcons name='caht' color={color} size={size} />
+          },
+          tabBarBadge: 1
         }}
       />
 
