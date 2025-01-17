@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, ScrollView, Image} from 'react-native'
 import React from 'react'
+import "./style.css"
 
 const Home = () => {
   return (
