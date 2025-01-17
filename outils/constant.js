@@ -11,4 +11,7 @@ export const TEXT_SIZE = {
     secondary: 14
 }
 
-exp
+export const PADDING = {
+    horizontal: 15,
+    vertical: 15
+}
