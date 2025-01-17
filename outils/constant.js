@@ -6,3 +6,9 @@ export const COLORS = {
     iconColor: "#eaebef",
 }
 
+export const TEXT_SIZE = {
+    title: 22,
+    secondary: 14
+}
+
+exp
