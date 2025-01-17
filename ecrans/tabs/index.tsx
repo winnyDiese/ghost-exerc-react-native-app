@@ -4,6 +4,7 @@ import { createMaterialTabNavigator } from "@react-navigation/material-bottom-ta
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons'
 import React from 'react'
 import Home from '../Home'
+import Messages from '../Message'
 
 // const Tab = createBottomTabNavigator()
 const Tab = createMaterialTabNavigator()
@@ -28,6 +29,18 @@ const BootomTabs = () => {
       />
 
       <Tab.Screen
+        name='NOtification'
+        component={Messages}
+        options={{
+          tabBarLabel: 'Message',
+          tabBarIcon: ({color, size}) => {
+            <MaterialCommunityIcons name='caht' color={color} size={size} />
+          },
+          tabBarBadge: 1
+        }}
+      />
+
+      <Tab.Screen
         name='Profile'
         component={Home}
         options={{
@@ -38,17 +51,7 @@ const BootomTabs = () => {
         }}
       />
       
-      <Tab.Screen
-        name='NOtification'
-        component={Home}
-        options={{
-          tabBarLabel: 'Message',
-          tabBarIcon: ({color, size}) => {
-            <MaterialCommunityIcons name='caht' color={color} size={size} />
-          },
-          tabBarBadge: 1
-        }}
-      />
+      
 
     </Tab.Navigator>
   )
