@@ -9,7 +9,7 @@ const Home = () => {
         <Text style={{color: 'white'}}>John Doe</Text>
         <Image 
           source={require('../../assets/images/icon.png')}
-          style={{ width: 100, height: 100 }}
+          style={dashboardStyles.userImage}
           />
       </View>
     </ScrollView>

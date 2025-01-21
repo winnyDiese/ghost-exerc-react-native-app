@@ -9,6 +9,15 @@ const dashboardStyles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: PADDING.horizontal,
         paddingVertical: PADDING.vertical
+    },
+    userImage: {
+        width: 50,
+        height: 50,
+        borderRadius: 50/2
+    },
+    userName:{
+        fontSize: 16,
+        
     }
 })
 
