@@ -33,6 +33,15 @@ const dashboardStyles = StyleSheet.create({
         backgroundColor: 'white',
         marginRight: 15,
         elevation: 5
+    },
+    mainText:{
+        color: 'white',
+        
+    },
+    subText: {
+        color: 'white',
+        marginTop: 10,
+        fontSize: 18
     }
 })
 

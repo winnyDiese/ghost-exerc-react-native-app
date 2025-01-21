@@ -27,9 +27,9 @@ const Home = () => {
         horizontal={true} 
         renderItem={({item})=>{
           return(
-          <View>
-            <Text style={dashboardStyles.scrollableListItem}>{item.mainText}</Text>
-            <Text>{item.subText}</Text>
+          <View style={dashboardStyles.scrollableListItem}>
+            <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
+            <Text style={dashboardStyles.subText}>{item.subText}</Text>
           </View>
           )
         }}
