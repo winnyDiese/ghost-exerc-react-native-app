@@ -42,8 +42,8 @@ const Home = () => {
 
 
       {/* Liste des symptomes */}
-      <View>
-        <Text style={{color:'white'}}>Quel symptome avez vous ?</Text>
+      <View style={dashboardStyles.title}>
+        <Text style={{color:'white', fontWeight: 'bold'}}>Quel symptome avez vous ?</Text>
       </View>
 
       <FlatList

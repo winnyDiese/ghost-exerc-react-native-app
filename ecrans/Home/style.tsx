@@ -26,7 +26,10 @@ const dashboardStyles = StyleSheet.create({
         paddingHorizontal: PADDING.horizontal,
         paddingVertical: PADDING.vertical
     },
-   
+    title: {
+        paddingHorizontal: PADDING.horizontal,
+        paddingVertical: PADDING.vertical
+    }
 })
 
 export default dashboardStyles
