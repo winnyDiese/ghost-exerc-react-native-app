@@ -10,7 +10,7 @@ import {
 import React from 'react'
 import dashboardStyles from './style'
 import { fakeActivity } from '@/fakeData/fakeActivity'
-import SVG_ICON from "@/assets/images/svg/new_year.svg"
+// import SVG_ICON from "../../assets/images/svg/new_year.svg"
 
 
 
@@ -37,7 +37,7 @@ const Home = () => {
         renderItem={({ item }) => {
           return (
             <TouchableOpacity style={dashboardStyles.scrollableListItem}>
-              <SVG_ICON width={50} height={50} />
+              {/* <SVG_ICON width={50} height={50} /> */}
               <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
               <Text style={dashboardStyles.subText}>{item.subText}</Text>
             </TouchableOpacity>
