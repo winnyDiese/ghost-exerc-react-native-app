@@ -18,7 +18,9 @@ const Home = () => {
 
 
       {/* Listes des activités */}
-      <FlatList horizontal={true} />
+      <FlatList 
+        horizontal={true} 
+      />
 
 
 
