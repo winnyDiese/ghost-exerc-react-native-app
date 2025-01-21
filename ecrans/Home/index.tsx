@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView, Image} from 'react-native'
+import { View, Text, StyleSheet, ScrollView, Image, FlatList } from 'react-native';
 import React from 'react'
 import dashboardStyles from './style';
 
@@ -18,7 +18,7 @@ const Home = () => {
 
 
       {/* Listes des activités */}
-      
+      <FlatList horizontal={true} />
 
 
 
