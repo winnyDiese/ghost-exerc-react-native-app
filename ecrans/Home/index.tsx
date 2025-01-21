@@ -23,6 +23,7 @@ const Home = () => {
         data={fakeActivity}
         keyExtractor={item => item.id}
         showsHorizontalScrollIndicator={false}
+        style={dashboardStyles.scrollableList}
         horizontal={true} 
         renderItem={({item})=>{
           return(

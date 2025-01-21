@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native"
 import { PADDING } from "../../outils/constant"
 
 const dashboardStyles = StyleSheet.create({
+    // Style header
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -17,6 +18,16 @@ const dashboardStyles = StyleSheet.create({
     },
     userName:{
         fontSize: 16,
+    },
+
+
+    // Style du flatlist
+    scrollableList: {
+        paddingHorizontal: PADDING.horizontal,
+        paddingVertical: PADDING.vertical
+    },
+    scrollableListItem: {
+        
     }
 })
 
