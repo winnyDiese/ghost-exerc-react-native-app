@@ -22,6 +22,7 @@ const Home = () => {
       <FlatList 
         data={fakeActivity}
         keyExtractor={item => item.id}
+        showsHorizontalScrollIndicator={false}
         horizontal={true} 
         renderItem={({item})=>{
           return(

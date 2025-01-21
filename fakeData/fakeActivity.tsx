@@ -14,5 +14,20 @@ export const fakeActivity = [
         id: 3,
         mainText: 'Traitement de qualité',
         subText: 'Vous avez un traitement de qualité'
+    },
+    {
+        id: 4,
+        mainText: 'Docteur a domicil !',
+        subText: 'Visit a domicil'
+    },
+    {
+        id: 5,
+        mainText: 'Clinique  pour moi',
+        subText: 'Une clinique pour vous soigner'
+    },
+    {
+        id: 6,
+        mainText: 'Traitement de qualité',
+        subText: 'Vous avez un traitement de qualité'
     }
 ]
