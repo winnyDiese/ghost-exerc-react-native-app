@@ -17,7 +17,7 @@ const dashboardStyles = StyleSheet.create({
     },
     userName:{
         fontSize: 16,
-        
+        color: 'white'
     }
 })
 
