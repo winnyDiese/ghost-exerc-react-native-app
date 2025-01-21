@@ -36,11 +36,7 @@ const Home = () => {
         horizontal={true}
         renderItem={({ item }) => {
           return (
-            <TouchableOpacity style={dashboardStyles.scrollableListItem}>
-              {/* <SVG_ICON width={50} height={50} /> */}
-              <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-              <Text style={dashboardStyles.subText}>{item.subText}</Text>
-            </TouchableOpacity>
+           
           )
         }}
       />
