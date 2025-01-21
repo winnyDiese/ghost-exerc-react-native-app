@@ -35,13 +35,14 @@ const dashboardStyles = StyleSheet.create({
         elevation: 5
     },
     mainText:{
-        color: 'white',
-        
+        // color: 'white',
+        fontWeight: 'bold',
+        fontSize: 16
     },
     subText: {
-        color: 'white',
+        // color: 'white',
         marginTop: 10,
-        fontSize: 18
+        fontSize: 13
     }
 })
 
