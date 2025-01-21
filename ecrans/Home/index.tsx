@@ -39,6 +39,24 @@ const Home = () => {
           return <ActivityItem item={item} />
         }}
       />
+
+
+      {/* Liste des symptomes */}
+      <View>
+        <Text style={{color:'white'}}>Quel symptome avez vous ?</Text>
+      </View>
+
+      <FlatList
+        data={fakeActivity}
+        keyExtractor={(item) => item.id}
+        showsHorizontalScrollIndicator={false}
+        style={dashboardStyles.scrollableList}
+        horizontal={true}
+        renderItem={({ item }) => {
+          return <ActivityItem item={item} />
+        }}
+      />
+
     </ScrollView>
   )
 }
