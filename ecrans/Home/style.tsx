@@ -1,5 +1,9 @@
 import { StyleSheet } from "react-native"
 
-const dashbordStyle = StyleSheet.create({
-    
+const dashboardStyles = StyleSheet.create({
+    header: {
+        backgroundColor: 'blue'
+    }
 })
+
+export default dashboardStyles
