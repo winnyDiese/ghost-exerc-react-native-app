@@ -1,7 +1,15 @@
-import { View, Text, StyleSheet, ScrollView, Image, FlatList } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  Image,
+  FlatList,
+  TouchableOpacity,
+} from 'react-native'
 import React from 'react'
-import dashboardStyles from './style';
-import { fakeActivity } from '@/fakeData/fakeActivity';
+import dashboardStyles from './style'
+import { fakeActivity } from '@/fakeData/fakeActivity'
 
 const Home = () => {
   return (
@@ -9,38 +17,31 @@ const Home = () => {
       {/*Debut du Header */}
       <View style={dashboardStyles.header}>
         <Text style={dashboardStyles.userName}>John Doe</Text>
-        <Image 
+        <Image
           source={require('../../assets/images/icon.png')}
           style={dashboardStyles.userImage}
         />
       </View>
       {/* Fin du header */}
 
-
-
       {/* Listes des activités */}
-      <FlatList 
+      <FlatList
         data={fakeActivity}
-        keyExtractor={item => item.id}
+        keyExtractor={(item) => item.id}
         showsHorizontalScrollIndicator={false}
         style={dashboardStyles.scrollableList}
-        horizontal={true} 
-        renderItem={({item})=>{
-          return(
-          <View style={dashboardStyles.scrollableListItem}>
-            <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-            <Text style={dashboardStyles.subText}>{item.subText}</Text>
-          </View>
+        horizontal={true}
+        renderItem={({ item }) => {
+          return (
+            <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+              <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
+              <Text style={dashboardStyles.subText}>{item.subText}</Text>
+            </TouchableOpacity>
           )
         }}
       />
-
-
-
-
     </ScrollView>
   )
 }
 
 export default Home
-
