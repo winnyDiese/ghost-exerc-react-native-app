@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native"
+import { PADDING } from "../../outils/constant"
 
 const dashboardStyles = StyleSheet.create({
     header: {
