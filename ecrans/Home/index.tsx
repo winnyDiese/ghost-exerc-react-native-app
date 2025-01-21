@@ -24,7 +24,11 @@ const Home = () => {
         keyExtractor={item => item.id}
         horizontal={true} 
         renderItem={({item})=>{
-          
+          return(
+          <View>
+            <Text style={{color:'white'}}>{item.mainText}</Text>
+          </View>
+          )
         }}
       />
 
