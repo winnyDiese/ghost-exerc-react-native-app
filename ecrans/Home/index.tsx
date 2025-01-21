@@ -10,6 +10,7 @@ import {
 import React from 'react'
 import dashboardStyles from './style'
 import { fakeActivity } from '@/fakeData/fakeActivity'
+import ActivityItem from '@/composants/ActivityItems'
 // import SVG_ICON from "../../assets/images/svg/new_year.svg"
 
 
@@ -35,9 +36,7 @@ const Home = () => {
         style={dashboardStyles.scrollableList}
         horizontal={true}
         renderItem={({ item }) => {
-          return (
-           
-          )
+          return <ActivityItem item={item} />
         }}
       />
     </ScrollView>

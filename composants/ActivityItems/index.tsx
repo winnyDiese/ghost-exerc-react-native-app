@@ -1,15 +1,16 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import React from 'react'
-import dashboardStyles from '@/ecrans/Home/style'
+import styles from './style'
+// import dashboardStyles from '@/ecrans/Home/style'
 
-const index = () => {
+const ActivityItem = ({item}) => {
   return (
-    <TouchableOpacity style={dashboardStyles.scrollableListItem}>
+    <TouchableOpacity style={styles.scrollableListItem}>
         {/* <SVG_ICON width={50} height={50} /> */}
-        <Text style={dashboardStyles.mainText}>{item.mainText}</Text>
-        <Text style={dashboardStyles.subText}>{item.subText}</Text>
+        <Text style={styles.mainText}>{item.mainText}</Text>
+        <Text style={styles.subText}>{item.subText}</Text>
     </TouchableOpacity>
   )
 }
 
-export default index
+export default ActivityItem
