@@ -7,7 +7,8 @@ const dashboardStyles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingHorizontal: PADDING.horizontal,
-        paddingVertical: PADDING.vertical
+        paddingVertical: PADDING.vertical,
+        backgroundColor: 'white'
     },
     userImage: {
         width: 50,
@@ -16,7 +17,6 @@ const dashboardStyles = StyleSheet.create({
     },
     userName:{
         fontSize: 16,
-        color: 'white'
     }
 })
 

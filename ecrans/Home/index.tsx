@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, ScrollView, Image, FlatList } from 'react-native';
 import React from 'react'
 import dashboardStyles from './style';
+import { fakeActivity } from '@/fakeData/fakeActivity';
 
 const Home = () => {
   return (
@@ -19,7 +20,12 @@ const Home = () => {
 
       {/* Listes des activités */}
       <FlatList 
+        data={fakeActivity}
+        keyExtractor={item => item.id}
         horizontal={true} 
+        renderItem={({item})=>{
+          
+        }}
       />
 
 
