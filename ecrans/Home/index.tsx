@@ -28,7 +28,8 @@ const Home = () => {
         renderItem={({item})=>{
           return(
           <View>
-            <Text style={{color:'white'}}>{item.mainText}</Text>
+            <Text style={dashboardStyles.scrollableListItem}>{item.mainText}</Text>
+            <Text>{item.subText}</Text>
           </View>
           )
         }}

@@ -27,7 +27,12 @@ const dashboardStyles = StyleSheet.create({
         paddingVertical: PADDING.vertical
     },
     scrollableListItem: {
-        
+        flexDirection: 'column',
+        paddingHorizontal: 15,
+        paddingVertical: 15,
+        backgroundColor: 'white',
+        marginRight: 15,
+        elevation: 5
     }
 })
 
