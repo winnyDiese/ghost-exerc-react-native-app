@@ -66,7 +66,7 @@ const Home = () => {
         <Text style={dashboardStyles.link}>Tout afficher</Text>
       </View>
 
-
+        
     </ScrollView>
   )
 }
