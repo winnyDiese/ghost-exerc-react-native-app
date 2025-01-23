@@ -11,6 +11,8 @@ import React from 'react'
 import dashboardStyles from './style'
 import { fakeActivity } from '@/fakeData/fakeActivity'
 import ActivityItem from '@/composants/ActivityItems'
+import { fakeSymptome } from '@/fakeData/fakeSymptome'
+import SymptomeItem from '@/composants/SymptomeItem'
 // import SVG_ICON from "../../assets/images/svg/new_year.svg"
 
 
@@ -47,13 +49,13 @@ const Home = () => {
       </View>
 
       <FlatList
-        data={fakeActivity}
+        data={fakeSymptome}
         keyExtractor={(item) => item.id}
         showsHorizontalScrollIndicator={false}
         style={dashboardStyles.scrollableList}
         horizontal={true}
         renderItem={({ item }) => {
-          return <ActivityItem item={item} />
+          return <SymptomeItem item={item} />
         }}
       />
 

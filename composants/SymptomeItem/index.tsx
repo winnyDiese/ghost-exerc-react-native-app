@@ -1,11 +1,14 @@
 
-import { View, Text} from 'react-native'
+import { View, Text, TouchableOpacity} from 'react-native'
 
 const SymptomeItem = ({item}) => {
     return (
-        <View>
-            <Text>index</Text>
-        </View>
+        <TouchableOpacity>
+            <View>
+                <Text style={{color:"white"}}>{item.libelle}</Text>
+            </View>
+
+        </TouchableOpacity>
     )
 }
 
