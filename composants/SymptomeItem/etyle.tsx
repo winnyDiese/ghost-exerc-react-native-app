@@ -1,4 +1,5 @@
 
+import { PADDING } from "@/outils/constant"
 import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
@@ -6,7 +7,8 @@ const styles = StyleSheet.create({
         marginRight: 15,
         flexDirection: 'row',
         backgroundColor: 'white',
-        paddingVertical
+        paddingVertical: PADDING.veritcal,
+        paddingHorizontal: PADDING.horizontal
     },
     itemImg: {
         width: 30,
@@ -14,3 +16,5 @@ const styles = StyleSheet.create({
         marginRight: 3
     }
 })
+
+export default styles

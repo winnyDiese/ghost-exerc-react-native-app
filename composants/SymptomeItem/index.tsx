@@ -7,7 +7,7 @@ const SymptomeItem = ({item}) => {
         <TouchableOpacity>
             <View style={styles.item}>
                 <Image style={styles.itemImg} source={require('../../assets/images/react-logo.png')} />
-                <Text style={{color:"white"}}>{item.libelle}</Text>
+                <Text >{item.libelle}</Text>
             </View>
 
         </TouchableOpacity>
