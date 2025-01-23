@@ -63,6 +63,7 @@ const Home = () => {
       {/* Docteur Liste */}
       <View style={dashboardStyles.title_space_between}>
         <Text style={dashboardStyles.titleBold}>No docteur</Text>
+        <Text style={dashboardStyles.link}>Tout afficher</Text>
       </View>
 
 

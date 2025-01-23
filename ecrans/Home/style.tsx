@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native"
-import { PADDING } from "../../outils/constant"
+import { PADDING, COLORS } from "../../outils/constant"
 
 const dashboardStyles = StyleSheet.create({
     // Style header
@@ -33,14 +33,18 @@ const dashboardStyles = StyleSheet.create({
     title_space_between: {
         paddingHorizontal: PADDING.horizontal,
         paddingVertical: PADDING.vertical,
-
+        marginTop: 15,
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
     titleBold: {
         fontWeight: 'bold',
         color: 'white'
+    },
+    link: {
+        color: COLORS.main
     }
+
 })
 
 export default dashboardStyles
