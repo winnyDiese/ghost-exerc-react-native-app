@@ -59,6 +59,13 @@ const Home = () => {
         }}
       />
 
+
+      {/* Docteur Liste */}
+      <View style={dashboardStyles.title_space_between}>
+        <Text style={dashboardStyles.titleBold}>No docteur</Text>
+      </View>
+
+
     </ScrollView>
   )
 }

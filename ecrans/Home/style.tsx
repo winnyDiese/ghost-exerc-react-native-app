@@ -30,6 +30,13 @@ const dashboardStyles = StyleSheet.create({
         paddingHorizontal: PADDING.horizontal,
         paddingVertical: PADDING.vertical
     },
+    title_space_between: {
+        paddingHorizontal: PADDING.horizontal,
+        paddingVertical: PADDING.vertical,
+
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
     titleBold: {
         fontWeight: 'bold',
         color: 'white'
