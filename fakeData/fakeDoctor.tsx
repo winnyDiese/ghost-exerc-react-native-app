@@ -12,6 +12,11 @@ export const fakeDoctor = [
         speciality: "Fanfaron",
         img: ""
     },
-    #{}
+    {
+        id: 3,
+        fullName: "Jean Pierre",
+        speciality: "Accouchement",
+        img:""
+    }
 
 ]

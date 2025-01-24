@@ -43,6 +43,10 @@ const dashboardStyles = StyleSheet.create({
     },
     link: {
         color: COLORS.main
+    },
+    doctorsContainer: {
+        paddingVertical: PADDING.vertical,
+        paddingHorizontal: PADDING.horizontal
     }
 
 })
