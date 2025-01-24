@@ -1,6 +1,6 @@
 
 export const COLORS = {
-    main: "#695cd4",
+    main: "#87CEEB",
     gray: "#f4f6fa",
     black: "#000",
     iconColor: "#eaebef",

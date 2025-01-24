@@ -13,6 +13,7 @@ import { fakeActivity } from '@/fakeData/fakeActivity'
 import ActivityItem from '@/composants/ActivityItems'
 import { fakeSymptome } from '@/fakeData/fakeSymptome'
 import SymptomeItem from '@/composants/SymptomeItem'
+import { fakeDoctor } from '@/fakeData/fakeDoctor'
 // import SVG_ICON from "../../assets/images/svg/new_year.svg"
 
 
@@ -64,6 +65,16 @@ const Home = () => {
       <View style={dashboardStyles.title_space_between}>
         <Text style={dashboardStyles.titleBold}>No docteur</Text>
         <Text style={dashboardStyles.link}>Tout afficher</Text>
+      </View>
+
+      <View>
+        {fakeDoctor.map((doctor, index)=>{
+          return (
+            <TouchableOpacity key={doctor.id}>
+              <Text>{doctor.fullname}</Text>
+            </TouchableOpacity>
+          )
+        })}
       </View>
 
         
