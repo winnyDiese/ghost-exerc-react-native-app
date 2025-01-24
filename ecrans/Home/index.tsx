@@ -70,7 +70,7 @@ const Home = () => {
       <View>
         {fakeDoctor.map((doctor, index)=>{
           return (
-            <TouchableOpacity key={doctor.id}>
+            <TouchableOpacity key={doctor.id} style={styles.}>
               <Text>{doctor.fullname}</Text>
             </TouchableOpacity>
           )
