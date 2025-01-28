@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native'
 import React from 'react'
-import dashboardStyles from './style'
+import dashboardStyles from './style';
 import { fakeActivity } from '@/fakeData/fakeActivity'
 import ActivityItem from '@/composants/ActivityItems'
 import { fakeSymptome } from '@/fakeData/fakeSymptome'
@@ -70,7 +70,7 @@ const Home = () => {
       <View>
         {fakeDoctor.map((doctor, index)=>{
           return (
-            <TouchableOpacity key={doctor.id} style={styles.}>
+            <TouchableOpacity key={doctor.id} style={dashboardStyles.doctorCard}>
               <Text>{doctor.fullname}</Text>
             </TouchableOpacity>
           )

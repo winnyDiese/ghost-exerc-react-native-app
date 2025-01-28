@@ -44,9 +44,19 @@ const dashboardStyles = StyleSheet.create({
     link: {
         color: COLORS.main
     },
+
     doctorsContainer: {
         paddingVertical: PADDING.vertical,
         paddingHorizontal: PADDING.horizontal
+    },
+    doctorCard: {
+        flex: 1,
+        flexDirection: "row",
+        backgroundColor: 'white',
+        elevation: 5,
+        padding: 10,
+        paddingHorizontal: 15,
+        
     }
 
 })
